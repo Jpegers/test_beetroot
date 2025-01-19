@@ -1,0 +1,365 @@
+@import url('https://fonts.cdnfonts.com/css/gagalin');
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gagalin', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    background-color: #fff; /* Тёмный фон */
+    color: #8E0726; /* Белый текст */
+    margin: 0;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: #E01C3F;
+    color: #fff;
+}
+
+.container {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 0vw;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
+    color: #66091A;
+    align-items: center;
+}
+
+.header_logo p {
+    padding-left: 1vw;
+}
+
+.header_logo img {
+    height: 5vw;
+    width: auto;
+}
+
+.header_soc {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+
+}
+
+.header_soc img {
+    height: 4vw;
+    width: auto;
+}
+
+
+/*приветствие */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 80vw;
+}
+
+h1 {
+    font-size: 5vw;
+    color: #66091A;
+    margin-bottom: 0.5vw;
+}
+
+.hero--info {
+    width: 700px;
+}
+
+.hero--info p {
+    font-size: 2vw;
+    color: #A3132C;
+    margin-bottom: 1vw;
+}
+
+.hero img {
+    height: auto;
+    width: 100%;
+    max-width: 42vw;
+    float: right;
+    margin-right: -2vw;
+}
+
+button {
+    background: #A3132C;
+    font-family: 'Gagalin', sans-serif;
+    color: #fff;
+    font-size: 2.3vw;
+    border-radius: 50px;
+    padding: 1vw 3vw;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+
+
+/*описание */
+
+h3  {
+    font-size: 5vw;
+    text-align: center;
+    padding: 1.5vw 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 80vw;
+}
+
+.text {
+    padding: 0vw 3vw 0vw 0vw
+}
+
+.text p {
+    font-size: 1.5vw;
+    max-width: 850px;
+    text-align: justify;
+
+}
+
+.info img {
+    height: auto;
+    width: 100%;
+    max-width: 25vw;
+    float: right;
+}
+
+
+
+
+/* как работает */
+
+.logic {
+    margin: 1vw 0 4vw 0;
+}
+
+
+
+/* Партнеры лого */
+
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 2vw;
+}
+
+.logo img {
+    height: 5vw;
+    width: auto;
+    padding: 1vw;
+}
+
+
+/* Отзывы и комментарии */
+
+.all-comment {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25vw;
+    margin-bottom: 4vw;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.onecomment {
+    width: 22%;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 2vw;
+    border: 0.25vw solid #8E0726;
+    background: #fff;
+    margin-top: 2vw;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding: 0 0 1vw 0;
+}
+
+.name img {
+    width: 4vw;
+    height: 4vw;;
+    border-radius: 50px;
+    border: 0.2vw solid #8E0726;
+}
+
+.name h2 {
+    font-size: 1.8vw;
+    padding-left: 2vw;
+}
+
+
+/* Ответы на частозадаваемые вопросы */
+
+.voprosi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 38vw;
+    padding-bottom: 4vw;
+}
+
+.block {
+    background-color:#8E0726;
+    padding: 1.5vw 2vw;
+    border-radius: 2vw;
+    width: 25%;
+    text-align: justify;
+}
+
+.block h4 {
+    font-size: 1.5vw;
+    color: #F5B3BF;
+    margin-bottom: 1vw;
+}
+
+.block p {
+    font-size: 1vw;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2vw;
+}
+
+.brand {
+    display: flex;
+    width: 20vw;
+}
+
+.brand img {
+    height: 7vw;
+    width: auto;
+}
+
+.links {
+    display: flex;
+    width: 50vw;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8vw;
+    align-items: center;
+    margin-bottom: 2vw;
+
+}
+
+.brand p {
+    padding-left: 1vw;
+}
+
+.colomn {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    margin: 0 1vw 0 1vw;
+}
+
+.colomn p {
+    color: #F5B3BF;
+    font-size: 1.2vw;
+}
+
+.colomn a {
+    font-size: 1.2vw;
+}
+
+
+/* выпадающий список вопросов */
+
+details {
+    font-size: 1.3vw;
+    margin: 0 8vw 0 8vw;
+    background: #A3132C;
+    color: #fff;
+    padding: 1vw 2vw 0vw 2vw;
+    border-radius: 1.5vw;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer; /* Указывает, что элемент можно нажать */
+    color: #F5B3BF;
+    font-size: 2vw;
+    padding-bottom: 1vw;
+    padding-left: 0.4vw;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before {
+    content: '';
+    display: inline-block;
+    background: url('../img/arrow.svg') no-repeat center center;
+    background-size: contain;
+    height: 1em;
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+details[open] summary::before {
+    transform: rotate(180deg); /* Поворот стрелки на 180 градусов */
+}
+
+details p {
+    padding-left: 4vw;
+    padding-bottom: 1.3vw;
+    width: 64vw;
+    
+    text-align: justify;
+}
+
+.qve {
+    margin: 1vw;
+}
+
+.pad {
+    padding-bottom: 3vw;
+}
