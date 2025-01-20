@@ -361,10 +361,9 @@ footer {
         align-items: center;
     }
 
-
     .hero--info p {
-        font-size: 3vw;
-        padding: 3vw 8vw 3vw 8vw;
+        font-size: 3.5vw;
+        padding: 1vw 3vw 4vw 3vw;
     }
 
     .hero img {
@@ -388,6 +387,7 @@ footer {
         transition: all 500ms ease;
         margin-top: 2vw;
         margin-bottom: 10vw;
+        padding-top: 1vw;
     }
 
     /*описание */
