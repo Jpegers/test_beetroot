@@ -75,8 +75,14 @@ header {
 .header_soc img {
     height: 3.5vw;
     width: auto;
+    width: 300px;
+    transition: transform 0.3s ease;
 }
 
+.header_soc img:hover {
+    
+    transform: scale(1.1); /* Увеличение картинки */
+}
 
 /*приветствие */
 
@@ -114,12 +120,18 @@ button {
     font-family: 'Gagalin', sans-serif;
     color: #fff;
     font-size: 2.3vw;
-    border-radius: 50px;
+    border-radius: 5vw;
     padding: 1vw 3vw;
     border: 0;
-    transition: all 500ms ease;
+    transition: all 500ms ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transform-origin: left center; /* Фиксируем левую часть */
 }
 
+button:hover {
+    transform: scale(1.1); /* Увеличение картинки */
+    box-shadow: 0 0.1vw 0.4vw rgba(0, 0, 0, 0.4); /* Тень повторяет форму */
+    background-color: #E01C3F; /* Новый цвет при наведении */
+}
 
 
 /*описание */
@@ -162,7 +174,13 @@ h3  {
 /* как работает */
 
 .logic {
-    margin: 1vw 0 4vw 0;
+    align-items: center;
+    padding: auto;
+    margin: 1vw 0 5vw 0;
+}
+
+.logic img {
+    width: 100%;
 }
 
 
@@ -235,9 +253,46 @@ details p {
     margin: 1vw;
 }
 
+
 .pad {
     padding-bottom: 3vw;
 }
+
+
+
+
+
+
+details {
+    overflow: hidden; /* Скрываем лишний контент */
+}
+
+details p {
+    max-height: 1vw;
+    opacity: 0;
+    transition: max-height 0.5s ease, padding 0.5s ease, opacity 0.5s ease;
+}
+
+details[open] p {
+    max-height: 100px; /* Устанавливаем ограниченную максимальную высоту */
+    opacity: 1; /* Делаем текст видимым */
+    padding: 0 0 1.5vw 4vw; /* Восстанавливаем отступы */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 
@@ -291,6 +346,18 @@ footer {
     font-size: 1.2vw;
 }
 
+.colomn a {
+    display: inline-block; /* Для применения transform */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform-origin: left center; /* Фиксируем левую часть */
+
+}
+
+.colomn a:hover {
+    transform: scale(1.1); /* Увеличение */
+    color: #66091A; /* Новый цвет при наведении */
+}
 
 
 
@@ -381,7 +448,7 @@ footer {
         font-family: 'Gagalin', sans-serif;
         color: #fff;
         font-size: 7vw;
-        border-radius: 50px;
+        border-radius: 8vw;
         padding: 1.5vw 6vw;
         border: 0;
         transition: all 500ms ease;
@@ -525,6 +592,69 @@ footer {
     .colomn a {
         font-size: 1.5vw;
     }
+
 }
 
 
+
+
+/* Контейнер для текста и кнопки */
+.hero--info {
+    opacity: 0; /* Изначально скрыто */
+    transform: translateY(20px); /* Сдвиг текста вниз */
+    animation: fadeInUp 1s ease-out forwards; /* Плавное появление */
+    animation-delay: 0.5s; /* Задержка анимации */
+  }
+
+  .hero--info p {
+    opacity: 0; /* Изначально скрыто */
+    transform: translateY(20px); /* Сдвиг текста вниз */
+    animation: fadeInUp 1s ease-out forwards; /* Плавное появление */
+    animation-delay: 0.75s; /* Задержка анимации */
+  }
+  
+  /* Анимация появления текста */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Стили для кнопки */
+  .button {
+    opacity: 0;
+    transform: translateY(20px); /* Сдвиг кнопки вниз */
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.2s; /* Задержка для кнопки */
+  }
+  
+  /* Стили для изображения, плавное появление справа */
+  .hero img {
+    opacity: 0;
+    transform: translateX(20px); /* Сдвиг изображения вправо */
+    animation: fadeInRight 1s ease-out forwards;
+    animation-delay: 0.5s; /* Задержка для изображения */
+  }
+  
+  /* Анимация для картинки */
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  
+
+
+
+  
