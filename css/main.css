@@ -357,6 +357,22 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* моб версия */
 @media (max-width: 768px) {
     body {
@@ -390,6 +406,7 @@ footer {
     .header_logo p {
         font-size: 7vw;
         padding-top: 1vw;
+        margin-left: 1vw;
     }
 
     .header_soc {
@@ -487,7 +504,7 @@ footer {
 
     /*Как работает*/
     .responsive-image {
-        content: url('../img/mini-logic.svg'); /* Меняем изображение для ширины экрана меньше 768px */
+        content: url('../img/mini-logic.png'); /* Меняем изображение для ширины экрана меньше 768px */
       }
     
     
