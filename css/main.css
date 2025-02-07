@@ -1,4 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/gagalin');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 * { 
     margin: 0;
@@ -9,8 +11,8 @@ body {
     font-family: 'Gagalin', sans-serif;
     font-size: 24px;
     font-style: normal;
-    background-color: #fff; /* Тёмный фон */
-    color: #8E0726; /* Белый текст */
+    background-color: #fff; 
+    color: #8E0726; 
     margin: 0;
     align-items: center;
 }
@@ -664,10 +666,62 @@ footer {
       opacity: 1;
       transform: translateX(0);
     }
-  }
-
-  
+}
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
+font-family: "Inter", serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+color: #290007;
+text-align: center;
+padding: 0vw 10vw 0vw 10vw 
+}
+
+.about h1 {
+font-size: 48px;
+font-weight: 800;
+margin-top: 100px;
+}
+
+.about h2 {
+font-size: 36px;
+font-weight: 600;
+margin-bottom: 40px;
+}
+
+.about .block {
+text-align: justify;
+}
+
+.block {
+    text-align: left;
+    margin: 50px;
+}
+
+.block h3 {
+font-size: 28px;
+}
+
+.block p {
+    list-style: none;
+    font-size: 16px;
+    padding: 5px;
+
+}
