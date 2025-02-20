@@ -383,5 +383,18 @@
         
     </footer>
 
+    <script>
+        var path = window.location.pathname;
+        var redirects = {
+            "./terms/": "./terms.html",
+            "./privacy/": "./privacy.html",
+            "./audit/": "./audit.html"
+        };
+    
+        if (redirects[path]) {
+            window.location.href = redirects[path];
+        }
+    </script>
+
 </body>
 </html>
