@@ -608,18 +608,6 @@ footer {
         font-size: 1.5vw;
     }
 
-    .pdf-container a{
-        color: #ffffff; 
-        background-color: #66091A;   
-        padding: 10px 20px;
-        border-radius: 10px;
-        font-size: 6px;
-      }
-    
-    .pdf-container {
-        margin-bottom: 50px;
-    }
-
 }
 
 
@@ -818,11 +806,22 @@ font-size: 24px;
   .pdf-container a{
     color: #ffffff; 
     background-color: #66091A;   
-    padding: 20px 40px;
-    border-radius: 20px;
+    padding: 1vw 8vw;
+    border-radius: 50px;
     font-size: 36px;
   }
 
 .pdf-container {
     margin-bottom: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .pdf-container a{
+        color: #ffffff; 
+        background-color: #66091A;   
+        padding: 3vw 16vw;
+        border-radius: 50px;
+        font-size: 24px;
+    }   
 }
