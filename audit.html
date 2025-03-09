@@ -18,11 +18,7 @@
 </head>
 
 <body>
-    <script>
-  if (navigator.userAgent.indexOf("Safari") !== -1 && navigator.userAgent.indexOf("Chrome") === -1) {
-    document.getElementById("pdf-viewer").innerHTML = '<a href="files/document.pdf" target="_blank">Открыть PDF</a>';
-  }
-</script>
+    
     <!-- Шапка -->
     <div class="wrapper">
         <header class="container">
@@ -50,6 +46,10 @@
 
         <div class="pdf-container">
             <object><embed src="./pdf/Beetroot Finance Audit Report.pdf" width="700" height="500" /></object>
+            <button-pdf>
+                <a href="./pdf/Beetroot Finance Audit Report.pdf" target="_blank">Open PDF</a>
+            </button-pdf>
+
         </div>
         
     </div>
@@ -104,5 +104,5 @@
         }
     </script>
 
-</body>
+</body> 
 </html>
